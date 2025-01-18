@@ -4,7 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fire Works</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.fireworks{
+    margin: 5vh;
+    display: flex;
+    height: 70vh;
+    justify-content: space-evenly;
+}
+.firework1{
+    svg path{
+        width: 20vw;
+        height: 70vh;
+    }
+svg path{
+    fill: transparent;
+    stroke: yellow;
+    stroke-width: 5;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: textAnimation 4s ease-in-out infinite forwards;
+}
+}
+.firework2{
+    svg path{
+        width: 20vw;
+        height: 70vh;
+    }
+svg path{
+    fill: transparent;
+    stroke: violet;
+    stroke-width: 5;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: textAnimation 4s ease-in-out infinite forwards;
+}
+}
+.firework3{
+    svg path{
+        width: 20vw;
+        height: 70vh;
+    }
+svg path{
+    fill: transparent;
+    stroke: blue;
+    stroke-width: 5;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: textAnimation 4s ease-in-out infinite forwards;
+}
+}
+.firework4{
+    svg path{
+        width: 20vw;
+        height: 70vh;
+    }
+svg path{
+    fill: transparent;
+    stroke: lightgreen;
+    stroke-width: 5;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: textAnimation 4s ease-in-out infinite forwards;
+}
+}
+.firework5{
+    svg path{
+        width: 20vw;
+        height: 70vh;
+    }
+svg path{
+    fill: transparent;
+    stroke: red;
+    stroke-width: 5;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: textAnimation 4s ease-in-out infinite forwards;
+}
+}
+@keyframes textAnimation {
+    0%{
+        stroke-dashoffset: 500;
+    }
+    80%{
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+.greeting{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    font-size: 7rem;
+    color: aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    animation: move 4s ease-in-out alternate infinite;
+}
+@keyframes move {
+    0%{transform: translateX(-40vw); color: yellow;}
+    50%{transform: translateX(0vw); color: blue;}
+    100%{transform: translateX(40vw); color: red;}
+}
+    </style>
 </head>
 <body>
     <div class="fireworks">
