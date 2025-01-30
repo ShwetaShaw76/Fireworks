@@ -1,2 +1,2 @@
 # Fireworks
-A fireworks display
+A fireworks display with a warm greeting
