@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:linear-gradient( to top, black, grey);
+    height: 100vh;
+    overflow: hidden;
+}
+.fireworks{
+    margin: 5vh;
+    display: flex;
+    height: 70vh;
+    justify-content: space-evenly;
+}
+.fireworks1{
+    svg path{
+        width: 20vw;
+        height: 70vh;
+    }
+    svg path{
+        fill: transparent;
+        stroke: yellow;
+        stroke-width: 5;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: textAnimation 4s ease-in-out infinite forwards;
+    }
+}
+.fireworks2{
+    svg path{
+        width: 20vw;
+        height: 70vh;
+    }
+    svg path{
+        fill: transparent;
+        stroke: violet;
+        stroke-width: 5;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: textAnimation 4s ease-in-out infinite forwards;
+    }
+}
+.fireworks3{
+    svg path{
+        width: 20vw;
+        height: 20vh;
+    }
+    svg path{
+        fill: transparent;
+        stroke: blue;
+        stroke-width: 5;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: textAnimation 4s ease-in-out infinite forwards;
+    }
+}
+.fireworks4{
+    svg path{
+        width: 20vw;
+        height: 70vh;
+    }
+    svg path{
+        fill: transparent;
+        stroke: lightgreen;
+        stroke-width: 5;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500; 
+        animation: textAnimation 4s ease-in-out infinite forwards;
+    }
+}
+.fireworks5{
+    svg path{
+        width: 20vw;
+        height: 70vh;
+    }
+    svg path{
+        fill: transparent;
+        stroke: red;
+        stroke-width: 5;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: textAnimation 4s ease-in-out infinite forwards;
+    }
+}
+@keyframes textAnimation {
+    0%{
+        stroke-dashoffset: 500;
+    }
+    80%{
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+.greeting{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    font-size: 7rem;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: move 4s ease-in-out alternate infinite;
+}
+@keyframes move {
+    0%{
+        transform: translateX(-40vw);
+        color: yellow;
+    }
+    50%{
+        transform: translateX(0vw);
+        color: blue;
+    }
+    100%{
+        transform: translateX(40vw);
+        color: red;
+    }
+}
